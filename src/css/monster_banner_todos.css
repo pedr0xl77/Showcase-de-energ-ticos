@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde-neon: #00ff00;
+    --background-color: #000000;
+    --background-color-ligth: #0f0f0f;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--verde-neon);
+    background-color: var(--background-color-ligth);   
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover{
+   color: var(--verde-neon);
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: var(--background-color);
+}
+
+#banner-main{
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#banner-main img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    position: relative;
+}
+
+#banner-main h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+}
+
+section nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px 0;
+  
+    
+}
+
+#atual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--background-color-ligth);
+    border-radius: 10px;
+}
+
+section nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color:rgb(95, 95, 95);
+    transition: 0.3s ;
+}
+
+section nav ul li:hover{
+    background-color: var(--background-color-ligth);
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+#logo img{
+    height: 80px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color-ligth);
+    border-top:  solid var(--verde-neon);
+    margin-top: 20px;
+}
+
+#redes-sociais{
+    margin-bottom: 10px;
+}
+
+#redes-sociais a{
+    margin: 0 10px;
+}
+
+#redes-sociais a img{
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+#redes-sociais a img:hover{
+    transform: scale(110%);
+}
